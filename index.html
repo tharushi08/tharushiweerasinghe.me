@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/536ce2e963.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text"></div>
+            <p>IT UNDERGRADUATE @ SLTC Research University
+
+            </p> 
+            <h1>Hi! I'm 
+                <h1 style="color:rgb(223, 20, 20)">Tharushi Umayanga </h1><h1>Frontend Developer</h1>
+        </div>
+    </div>
+    <!--------------about------------>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="removebg-preview.png">
+                </div>
+                <div class="about-col-2">   
+                <h1 class="sub-title">About Me</h1>
+                <br>
+                <p>I am a good communicator with proven interpersonal skills and am used
+                    to working in a team whilst also being capable of using my own initiative.
+                    I am always enthusiastic to learn and undertake new challenges.
+
+                      <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> 
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                      </div>
+                      <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                           <li><span>UI/UX</span> Designing Web/App interface</li> 
+                           <li><span>App Development</span> Building Android apps</li> 
+                           <li><span>Cloud based</span> Web Application Development</li> 
+                        </ul>
+
+                      </div>
+                      <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>No experions</span><br></li> 
+                        </ul>
+
+                      </div>
+                      <div class="tab-contents" id="education">
+                        <ul>
+                           <li><span>2020 - 2024</span> BSc.(Hons) in Software Engineering<br>
+                            SLTC Research University</li> 
+                           <li><span>2017 - 2019</span> GCE Advance Level - Technology Stream<br>
+                            C.W.W.Kannangara Central Collage</li> 
+                            
+                        </ul>
+
+                      </div>
+            </div>
+        </div>
+    </div>
+    <!----------------service---------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>We take you through the journey of planning, designing and building a growth-ready web app.</p>
+                    <a href="#">learn more..................</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>No matter the scope of your system, our UX experts will find a practical design solution.</p>
+                    <a href="#">learn more..............</a>
+                </div>
+                
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--------------contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <p> </p>
+                    <p> </p>
+                    <p> </p>
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>tharushiu2000@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+94771495372</p>
+                    <div class="social-icons"> 
+                     <a href=""><i class="fab fa-facebook"></i></a>
+                     <a href=""><i class="fab fa-instagram"></i></a>
+                     <a href=""><i class="fab fa-linkedin"></i></a>  
+                    </div>
+                    
+
+                    <a href="Tharushi Umayanga_CV.pdf" target="_blank" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right"></div>
+            </div>
+        </div>
+    </div>
+           
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");   
+    }
+
+
+
+    </script>
+</body>
+</html>
